@@ -18,10 +18,52 @@ public class NameToHeight {
 	 * contain a specified name.
 	 */
 	public static void main(String[] args) {
+		
+		HashMap <String, Double> nameToHeight = new HashMap<String, Double>();
+		
+		nameToHeight.put("Rosie" , 65.0);
+		nameToHeight.put("Katie", 67.0);
+		nameToHeight.put("Olivia", 67.0);
+		
 		Scanner in = new Scanner(System.in);
+		
+		
+		
+		
+		while (true) {
+			
+			System.out.println("What is your name?");
+			String name = in.next();
+			
+			if (name .equals("quit")) {	
+				break;					
+			}
+			
+			if (nameToHeight.get(name) !=null)
+			{			
+			System.out.println(nameToHeight.get(name));				
+			}
+			else 
+			{
+			System.out.println("null");			
+			}		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
-		// FIXME
-		throw new NotYetImplementedException();
 
 	}
 }
